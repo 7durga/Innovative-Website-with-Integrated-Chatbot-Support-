@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our College</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Our College</h2>
+            <p>Information about the college...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 College Name. All rights reserved Durgarao.</p>
+    </footer>
+
+    <!-- Chatbot Message Icon -->
+    <div id="chat-icon" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container" class="hidden">
+        <div id="chatbot">
+            <div id="chat-window">
+                <div id="chat-output"></div>
+            </div>
+            <input type="text" id="user-input" placeholder="Enter your registration number...">
+            <button id="send-button">Send</button>
+            <button id="close-button" onclick="toggleChatbot()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
